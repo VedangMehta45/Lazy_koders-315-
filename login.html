@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | By Code Info</title>
+    <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label>Email</label>
+            <input id="email" type="email" placeholder="" />
+            <label>Password</label>
+            <input id="password" type="password" placeholder="" />
+            <input type="button" value="Submit" onclick="login()" />
+        </form>
+    </div>
+    <p class="para-2">
+        Not have an account? <a href="signup.html">Sign Up Here</a>
+    </p>
+
+    <script>
+        async function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                const response = await fetch('http://localhost:3000/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ email, password }),
+                });
+
+                if (response.ok) {
+                    console.log('Login successful');
+                    window.location.href = 'quiz1.html'; 
+                    // Redirect to a new page or perform other actions after successful login
+                } else {
+                    console.error('Error during login:', response.statusText);
+                    // Handle login failure, show an error message, etc.
+                }
+            } catch (error) {
+                console.error('Error during login:', error.message);
+            }
+        }
+    </script>
+</body>
+</html>
