@@ -1,0 +1,100 @@
+h1{
+    color: rgb(57, 18, 18);
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 300%;
+}
+h2{  
+    color: rgb(40, 7, 170);
+    font-size: 180%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.st{
+ background-image: url("Quiz_BG.jpg");
+ background-size: cover;
+}
+button{
+    margin-top: 2% ;
+    margin-left: 10%;
+    font-size: 150%;
+    color: rgb(0, 77, 145);
+    background-color: rgb(226, 224, 192);
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid rgb(207, 0, 0);
+    border-radius: 6px;
+    cursor: pointer;
+}
+button:hover{
+    color:rgb(1, 14, 14);
+    background-color: rgb(89, 178, 196);
+    border: 1px solid yellow;
+    font-size: 150%;
+    font-weight: bold;
+}
+#next{
+    margin-left: 40%;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 20px 00px 20px;
+    align-items: flex-end;
+    background-color: rgb(40, 7, 170);
+    color: antiquewhite;
+    
+
+}
+.ins{
+    border-bottom: 3px double rgb(32, 25, 1);
+    border-left: 3px double rgb(32, 24, 14);
+    border-bottom-left-radius: 7px;
+    color:rgb(1, 104, 104);
+    font-family: "Georgia", Times New Roman , Times, serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 120%;
+}
+#timer {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.ans_opt{
+    max-width: 200px;
+    word-wrap: break-word;
+    white-space: normal; /* Allow the content to wrap */
+    max-height: px;
+}
+
+#skip{
+    margin-left: 40%;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0px 20px 00px 20px;
+    align-items: end;
+    background-color: rgb(40, 7, 170);
+    color: antiquewhite;
+    
+}
+.login_box{
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    display: flex;
+    min-height: 100vh; 
+}
+#container label,input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vh;
+}
+#container label{
+    height:5vh;
+}
+#container{
+    border: 2px solid blue;
+    
+}
